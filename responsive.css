@@ -1,0 +1,253 @@
+@media screen and (max-width:900px) {
+    #home {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2em;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex: 1;
+    }
+
+    #home .gauche {
+        width: 100%;
+    }
+
+    #home .gauche h1 {
+
+        letter-spacing: 3px;
+        font-size: 1em;
+        text-align: center;
+        margin: 0;
+    }
+
+    section h1 {
+        text-align: center;
+
+    }
+
+    .texte-principale-propos {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #home .gauche .nom {
+        color: #ffffff;
+        font-size: 1.6em;
+        margin: 0 10px;
+    }
+
+
+    #home .gauche p {
+        text-align: center;
+        letter-spacing: 0.4px;
+        font-size: 1.1em;
+        margin: 1em;
+    }
+
+    .gauche .bouton {
+        text-align: center;
+    }
+
+
+
+    #home .droit img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #competence h1 {
+        text-align: center;
+        margin-left: 1em;
+
+    }
+
+
+    #competence .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5em;
+        margin: 3em;
+    }
+
+    #competence .carde-competence {
+        width: 40em;
+    }
+
+    footer h1 {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:700px) {
+    header {
+
+        padding: 8px;
+
+    }
+
+    nav {
+        margin: 0 10px;
+
+
+    }
+
+    nav ul a {
+
+        display: none;
+    }
+
+    footer ul a {
+        font-size: 0.8em;
+    }
+
+    .title h1 {
+        font-size: 1em;
+    }
+
+    footer h1 {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width:700px) {
+    footer ul {
+        display: none;
+
+    }
+
+
+}
+
+@media screen and (min-width:730px) and (max-width:825px) {
+
+    .contenue {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenue .gauche {
+        text-align: start;
+        width: 50%;
+        margin-bottom: 2em;
+    }
+
+    .contenue .gauche img {
+        border-radius: 10px;
+        width: 100%;
+    }
+
+
+
+}
+
+@media screen and (max-width:729px) {
+    .contenue {
+        padding: 0;
+        margin: 0 !important;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #propos .gauche {
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #propos .droit {
+        display: flex;
+    }
+
+    #propos .droit1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenue img {
+        border-radius: 8px;
+        width: 50% !important;
+    }
+
+    .droit1 h3 {
+        margin-top: 2em;
+        text-align: center;
+        animation: animation5 4s linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+
+    @keyframes animation5 {
+        0% {
+            transform: translateY(40px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .droit1 p {
+        text-align: center;
+        margin: 0 1em;
+        animation: animation5 4s linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+
+    .droit2 h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 0.9em !important;
+
+    }
+
+    .droit2-inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .droit2-inner p {
+        text-align: center;
+    }
+
+
+}
+
+@media (min-width:600px) and (max-width:999px) {
+    #projets .card-projets {
+        width: 35%;
+
+    }
+
+
+
+    #projets .card-projets .texte p {
+
+        /* text-align: justify;
+        word-break: break-all; */
+        margin: 0.5em;
+        font-size: 0.5em;
+    }
+
+    #projets .card-projets .texte h3 {
+        margin-bottom: 1em;
+    }
+
+}
+
+@media (max-width:599px) {
+    #projets .card-projets {
+        width: 100%;
+    }
+
+    #projets .card-projets .texte p {
+        font-size: 1.3em;
+    }
+}

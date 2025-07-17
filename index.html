@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aboubakar Dev</title>
+    <link rel="shortcut icon" href="images/profil.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="title">
+                <h1>AbouDev</h1>
+            </div>
+            <ul>
+                <li><a href="#home">accueil</a></li>
+                <li><a href="#propos">À Propos</a></li>
+                <li><a href="#competence">compétence</a></li>
+                <li><a href="#projets">projets</a></li>
+                <!--lien github-->
+                <li><a onclick="contact()" id="clic" style="cursor: pointer;" target="_blank">contact</a></li>
+                <!-- lien vers un page où je met mon adresse email et mon numéro -->
+            </ul>
+
+        </nav>
+    </header>
+    <section id="home">
+
+        <div class="droit">
+            <img src="images/profil.jpg" alt="">
+        </div>
+        <div class="gauche">
+            <h1 class="nom"> Hello, I'm Aboubakar</h1>
+            <h1>Dévellopeur Full-Stack </h1>
+            <p>je crée des application web modernes et réactives avec <br> un interface claire et une experience
+                utilisateur
+                fluiide.</p>
+            <div class="bouton"><a href="contact.html" target="_blank"><button onclick="contact()" id="clic">me
+                        contacter</button>
+                </a>
+
+                <a href="https://github.com/aboubakar2007" target="_blank"><button>mon github</button></a>
+            </div>
+        </div>
+
+    </section>
+    <section id="propos">
+        <div class="texte-principale-propos">
+            <h1>À propos de moi </h1>
+            <p>découvrez mon parcours, ma passion...</p>
+        </div>
+        <div class="contenue">
+            <div class="gauche">
+                <img src="images/profil.jpg" alt="">
+            </div>
+            <div class="droit">
+                <div class="droit1">
+                    <div>
+                        <h3> <i class="fa-solid fa-user"></i>qui je suis !</h3>
+                        <p>je suis un Dévellopeur Full-Stack qui crée des applications web intéractives et propres. Avec
+                            une
+                            formation technique</p>
+                    </div>
+                    <div>
+                        <h3><i class="fa-solid fa-lightbulb"></i> Mon approche </h3>
+                        <p>je mise sur la simpplicité, la clarté et la llogique dans tout ce que je dévellope. Mon but
+                            est
+                            de créer des solutions utiles, propes et faciles à utiliser, tout en continuant à apprendre
+                            et à
+                            m'améliorer chaque jour.</p>
+                    </div>
+                </div>
+                <div class="droit2">
+                    <h2><i class="fa-solid fa-circle-info"></i>informations personneles</h2>
+                    <div class="droit2-inner">
+
+                        <div class="content1">
+                            <p><i class="fa-solid fa-address-card"></i><b>Name :</b> doumbia Noursery aboubakar</p>
+                            <p><i class="fa-solid fa-location-dot"></i><b>Lieu de naissance :</b> Duekoue</p>
+                            <p><i class="fa-solid fa-phone"></i><b>numéro :</b>0700082080</p>
+                            <p><i class="fa-solid fa-location-dot"></i><b>Lieu d'habitation : </b> Bingerville</p>
+                        </div>
+                        <div class="content2">
+                            <p><i class="fa-solid fa-calendar-days"></i><b>Date de naissance :</b> 13 septembre 2007
+                            </p>
+                            <p><i class="fa-solid fa-envelope"></i><b>Email :</b> aboubakarnoursery@gmail.com </p>
+                            <p><i class="fa-solid fa-school"></i><b> Enseignement :</b>Agitel Formation </p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="competence">
+        <h1>compétence</h1>
+        <div class="card-container">
+            <div class="carde-competence">
+                <span class="log"><i class="fa-solid fa-code"></i></span>
+                <h2>Developpeur Frontend</h2>
+                <p>HTML,CSS,javaScript</p>
+            </div>
+            <div class="carde-competence">
+                <span class="log"><i class="fa-solid fa-server"></i></span>
+                <h2>Developpeur Backend</h2>
+                <p>Python,Vue.js</p>
+            </div>
+            <div class="carde-competence">
+                <span class="log"><i class="fa-solid fa-pen-fancy"></i> </span>
+                <h2>UI/UX Design</h2>
+                <p>Figma,canva</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets">
+        <!-- je dois mettre un lien de ces différents projets derrière chaque cadre -->
+        <h1>Mes projets</h1>
+        <p>voici quelques uns de mes projets web</p>
+        <div class="card-projet-container">
+            <div class="card-projets">
+                <a href=" https://aboubakar2007.github.io/SITE-FOOTBALL/" style="text-decoration: none; color:white; "
+                    target="_blank">
+                    <img src="images/club.png" alt="">
+                    <div class="texte">
+                        <h3>site club football</h3>
+                        <div class="langage-uti">
+                            <button>HTML</button>
+                            <button>CSS</button>
+                        </div>
+                        <p class="legende">un site web qui simule une page de club de football inpiré sur celui du réal
+                            de
+                            madrid</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card-projets">
+                <a href=" https://aboubakar2007.github.io/carte-interactive-CI-/"
+                    style="text-decoration: none; color:white; " target="_blank">
+                    <img src="images/carte.png" alt="">
+                    <div class="texte">
+                        <h3>site de carte intéractive</h3>
+                        <div class="langage-uti">
+                            <button>HTML</button>
+                            <button>CSS</button>
+                            <button>JS</button>
+                        </div>
+                        <p class="legende">un site avec une carte intéractive qui montre les différents lieu
+                            touristiques
+                            des districts de la côte d'ivoire </p>
+                    </div>
+                </a>
+            </div>
+            <div class="card-projets">
+                <a href="https://aboubakar2007.github.io/premier-page-responsive/"
+                    style="text-decoration: none; color:white; " target="_blank">
+                    <img src="images/tech.png" alt="">
+                    <div class="texte">
+                        <h3>site magasin informatique</h3>
+                        <div class="langage-uti">
+                            <button>HTML</button>
+                            <button>CSS</button>
+                            <button style="font-size: 0.7em;">bootstrap</button>
+                        </div>
+                        <p class="legende">un site responsive qui simule un site de qui offre des services
+                            informatiques.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card-projets">
+                <a href="https://aboubakar2007.github.io/site-vente-d-article/"
+                    style="text-decoration: none; color:white; " target="_blank">
+                    <img src="images/vêtement.png" alt="">
+                    <div class="texte">
+                        <h3>siite boutique de vêtement</h3>
+                        <div class="langage-uti">
+                            <button>HTML</button>
+                            <button>CSS</button>
+                            <button>JS</button>
+                        </div>
+                        <p class="legende">un site web qui simule une boutique de vente de vêtement en ligne </p>
+                    </div>
+                </a>
+            </div>
+            <div class="card-projets">
+                <a href="https://aboubakar2007.github.io/site-voiture-occasion/"
+                    style="text-decoration: none; color:white; " target="_blank">
+                    <img src="images/voiture.png" alt="">
+                    <div class="texte">
+                        <h3>site vente voiture</h3>
+                        <div class="langage-uti">
+                            <button>HTML</button>
+                            <button>CSS</button>
+                            <button>JS</button>
+                        </div>
+                        <p class="legende">un sitye qui simule un site de vente de voiture d'ocasion</p>
+                    </div>
+                </a>
+            </div>
+            <span> NB: à part le site de magasion informatique tous les autres sites ne sont pas responsive </span>
+        </div>
+
+    </section>
+
+
+    <section id="reseau">
+        <h2>Mes réseaux sociaux</h2>
+
+        <div class="reseau-container">
+            <div class="reseau">
+                <div class="logo"><i class="fa-brands fa-instagram"></i></div>
+                <h3>Instagram</h3>
+                <button>consulter</button>
+            </div>
+            <div class="reseau">
+                <div class="logo"><i class="fa-brands fa-facebook-f"></i></div>
+                <h3>Facebook</h3>
+                <button>consulter</button>
+            </div>
+            <div class="reseau">
+                <div class="logo"><i class="fa-brands fa-tiktok"></i></div>
+                <h3>TikTok</h3>
+                <button>consulter</button>
+            </div>
+            <div class="reseau">
+                <div class="logo"><i class="fa-brands fa-x-twitter"></i></div>
+                <h3>X</h3>
+                <button>consulter</button>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <ul>
+            <li><a href="#home">accueil</a></li>
+            <li><a href="#propos">À Propos</a></li>
+            <li><a href="#competence">compétence</a></li>
+            <li><a href="#projets">projets</a></li>
+            <!--lien github-->
+            <li><a onclick="contact2()" id="clic2" style="cursor: pointer;" target="_blank">contact</a></li>
+            <!-- lien vers un page où je met mon adresse email et mon numéro -->
+        </ul>
+        <h1 id="citation"></h1>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

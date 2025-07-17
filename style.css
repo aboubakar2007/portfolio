@@ -1,0 +1,583 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: black;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    justify-content: end;
+    font-size: 1.1em;
+}
+
+nav {
+    justify-content: space-between;
+    display: flex;
+}
+
+.title h1 {
+    color: rgb(17, 155, 17);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+ul a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+}
+
+header {
+    background-color: black;
+    padding: 20px;
+    transition: 1s;
+    z-index: 2;
+
+}
+
+
+ul a:hover {
+    text-decoration: underline;
+
+}
+
+#home {
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#home .droit {
+
+    width: 40%;
+    border-radius: 100%;
+}
+
+
+#home .gauche {
+
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+}
+
+#home .droit img {
+    width: 85%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid green;
+    box-shadow: 0px -10px 600px 10px green;
+    animation: animation1 2s ease-in-out;
+
+}
+
+@keyframes animation1 {
+    from {
+        opacity: 0.3;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.gauche h1 {
+    color: green;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30px;
+    line-height: 1.6em;
+    animation: animation2 0.8s ease-in-out;
+
+
+}
+
+.gauche p {
+    margin-left: 30px;
+    margin-top: 2em;
+    font-size: 1.2em;
+    animation: animation2 1.2s ease-in-out;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+.gauche .nom {
+
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30px;
+    line-height: 1.6em;
+    animation: animation2 0.8s ease-in-out;
+    font-weight: bold;
+}
+
+.gauche button {
+    width: 7em;
+    height: 3em;
+
+    margin-left: 30px;
+    margin-top: 4em;
+    background-color: transparent;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    animation: animation2 2s ease-in-out;
+
+}
+
+
+.bouton a {
+    color: transparent;
+}
+
+@keyframes animaation2 {
+    from {
+        scale: 0.3;
+    }
+
+    to {
+        scale: 1;
+    }
+}
+
+.gauche button::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(50, 131, 50);
+    display: inline-block;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    z-index: -1;
+    transition: width 0.6s ease-in-out;
+}
+
+.gauche button:hover::before {
+    width: 100%;
+}
+
+section {
+    margin-top: 6em;
+
+}
+
+section h1 {
+
+    animation: titre-animation 2s ease-in;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes titre-animation {
+    from {
+        transform: translateY(-60px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#propos .contenue {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 5em;
+    margin-top: 10vh;
+    display: flex;
+    flex: wrap;
+}
+
+
+#propos .contenue .gauche {
+    width: 100%;
+}
+
+#propos .contenue .gauche img {
+    margin-top: 1.5em;
+    width: 80%;
+    animation: animation4 4s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes animation4 {
+    0% {
+        transform: translateX(-100px);
+        scale: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        scale: 1;
+    }
+}
+
+#propos .contenue .droit {
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+}
+
+#propos .contenue .droit1 {
+    display: flex;
+    gap: 5em;
+    animation: animation5 4s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
+}
+
+@keyframes animation5 {
+    0% {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#propos .contenue .droit1 h3 i {
+    margin-right: 0.4em;
+}
+
+#propos .contenue .droit h2 {
+    font-size: 1.2em;
+
+}
+
+#propos .contenue .droit h2 i {
+    margin-right: 0.4em;
+
+}
+
+#propos .contenue .droit1 h3 {
+    margin-bottom: 1em;
+}
+
+#propos .contenue .droit2 {
+    display: flex;
+    flex-direction: column;
+    animation: animation6 4s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
+}
+
+@keyframes animation6 {
+    0% {
+        transform: translateY(100px);
+
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+
+        opacity: 1;
+    }
+}
+
+
+#propos .contenue .droit2 .content1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#propos .contenue .droit2 .content2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#propos .contenue .droit2 .droit2-inner {
+    display: flex;
+    gap: 4em;
+
+}
+
+
+#propos .contenue .droit2 h2 {
+    margin-bottom: 1em;
+}
+
+#propos i {
+    margin-right: 0.6em;
+}
+
+/* #propos .contenue  */
+
+
+.texte-principale-propos {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#propos h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+#competence {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+#competence h1 {
+    text-align: center;
+    font-size: 1.7em;
+    margin-left: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.carde-competence {
+    background: rgb(27, 25, 25);
+    width: 18em;
+    height: 10em;
+    border-radius: 8px;
+    position: relative;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: start;
+    padding: 1em;
+    animation: animation2 2s ease-in;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes animation2 {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.card-container span {
+    color: rgb(63, 134, 63);
+}
+
+.card-container i {
+    font-size: 1.8em;
+}
+
+.carde-competence:hover {
+    box-shadow: 0px 2px 5px 0px rgb(17, 155, 17);
+    cursor: pointer;
+}
+
+.carde-competence h2 {
+    font-size: 1.4em;
+}
+
+#reseau h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 1px solid gray;
+    padding-top: 15px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+
+}
+
+.reseau {
+    background: rgb(27, 25, 25);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    width: 15em;
+    height: 18em;
+    justify-content: space-around;
+    text-align: center;
+    padding: 1em;
+    border-radius: 5px;
+    animation: animation2 2s ease-in;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
+}
+
+.reseau button {
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid gray;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+
+
+}
+
+.reseau button:hover {
+    transition: 0.7s;
+    background-color: gray;
+}
+
+
+.reseau-container {
+    margin: 1em;
+    margin-top: 4em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 4em;
+
+
+}
+
+.logo i {
+    font-size: 3em;
+    color: gray;
+}
+
+.reseau-container h3 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    margin: 10em 2em;
+}
+
+footer h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5em;
+}
+
+#projets h1 {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
+    margin-bottom: 1em;
+    text-decoration-color: rgb(26, 87, 26);
+}
+
+#projets p {
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-projet-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 2em;
+    gap: 2em;
+}
+
+.card-projets {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    animation: animation4 2s linear;
+    animation-range: entry 0% cover 40%;
+    animation-timeline: view();
+}
+
+.card-projets:hover .texte {
+    background-color: rgb(7, 31, 7);
+    transition: 0.6s;
+}
+
+.card-projets img {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-projets .texte {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: rgb(19, 79, 19);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.card-projets .texte h3 {
+    margin-top: 1em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+
+.card-projets .texte .langage-uti {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+
+}
+
+.card-projets .texte button {
+    background-color: rgb(4, 50, 29);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    width: 50px;
+    height: 20px;
+}
+
+.card-projets .texte p {
+    text-align: center;
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+}
