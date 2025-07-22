@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');s
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +30,9 @@ nav {
 
 .title h1 {
     color: rgb(17, 155, 17);
-    font-family: "Poppins", sans-serif;
+      font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 li {
@@ -104,7 +106,9 @@ ul a:hover {
 .gauche h1 {
     color: green;
     font-size: 2em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
     margin-left: 30px;
     line-height: 1.6em;
     animation: animation2 0.8s ease-in-out;
@@ -347,7 +351,9 @@ section h1 {
 }
 
 #propos h1 {
-   font-family: "Poppins", sans-serif;
+     font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 
@@ -361,7 +367,9 @@ section h1 {
 #competence h1 {
     text-align: center;
     font-size: 1.7em;
-   font-family: "Poppins", sans-serif;
+   font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 
 }
 
@@ -490,7 +498,9 @@ footer {
 
 footer h1 {
     text-align: center;
-    font-family: "Poppins", sans-serif;
+     font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
     font-size: 1em;
 }
 
@@ -501,7 +511,9 @@ footer ul {
 }
 
 #projets h1 {
-    font-family: "Poppins", sans-serif;
+      font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 0.3em;
