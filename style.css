@@ -30,9 +30,7 @@ nav {
 
 .title h1 {
     color: rgb(17, 155, 17);
-      font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 li {
@@ -106,9 +104,7 @@ ul a:hover {
 .gauche h1 {
     color: green;
     font-size: 2em;
-    font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+   font-family: Arial, Helvetica, sans-serif;
     margin-left: 30px;
     line-height: 1.6em;
     animation: animation2 0.8s ease-in-out;
