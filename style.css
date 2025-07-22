@@ -30,7 +30,7 @@ nav {
 
 .title h1 {
     color: rgb(17, 155, 17);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 li {
@@ -347,7 +347,7 @@ section h1 {
 }
 
 #propos h1 {
-    font-family: Arial, Helvetica, sans-serif;
+   font-family: "Poppins", sans-serif;
 }
 
 
@@ -361,7 +361,7 @@ section h1 {
 #competence h1 {
     text-align: center;
     font-size: 1.7em;
-    font-family: Arial, Helvetica, sans-serif;
+   font-family: "Poppins", sans-serif;
 
 }
 
@@ -490,7 +490,7 @@ footer {
 
 footer h1 {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1em;
 }
 
@@ -501,6 +501,7 @@ footer ul {
 }
 
 #projets h1 {
+    font-family: "Poppins", sans-serif;
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 0.3em;
@@ -582,6 +583,4 @@ footer ul {
     font-size: 0.8em;
     font-family: Arial, Helvetica, sans-serif;
 }
-section h1{
-      font-family: "Poppins", sans-serif;
-}
+
